@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="./multi_input.css">
+  </head>
+  <body>
+    <div class="js-multi-input-container div-multi-input" style="width:500px;">
+        <input class="multi-input js-multi-input" type="text" size="20" placeholder="Some Place Holder" style="width:98%"/>
+    </div>
+    <button id="reset">Reset</button>
+    <script src="./multi_input.js"></script>
+    <script>
+      function textValidation(currentValue) {
+        // some validation false 
+        if(currentValue == 1)
+            return false;
+        return true;
+      }
+      function validationFailResponse() {
+        console.log('this is a fail');
+      }
+      $('.js-multi-input-container').multiInput("Some Place Holder", textValidation, validationFailResponse);
+      $('#reset').click(function (){
+        $('.js-multi-input-container').trigger('reset:container');
+      });
+    </script>
+  </body>
+</html>

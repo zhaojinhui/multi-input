@@ -1,0 +1,43 @@
+      .div-multi-input {
+        outline: 0;
+        background-color: #fff;
+        border: 1px solid #ccc;;
+
+      }
+      .div-multi-input-focus{
+        border-color: #080;
+        outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(0, 136, 0, 0.6);
+        -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(0, 136, 0, 0.6);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(0, 136, 0, 0.6);
+      }
+      .multi-input {
+        height:20px;
+        line-height: 1;
+        border: none;
+        font-size: 1em;
+        display: inline-block;
+        vertical-align:top;
+      }
+      .multi-input:focus {
+        outline: none;
+      }
+      .btn-multi-tag {
+        margin-left: 1px;
+        padding: 3px;
+        height:20px;
+        font-size: 1em;
+        font-weight: 700;
+        color: white;
+        line-height: 1;
+        background-color: #5bc0de;
+        display: inline-block;
+        border-radius: .25em;
+        display:inline-block;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+      }
+      .js-remove-tag {
+        margin-left: 5px;
+      }
