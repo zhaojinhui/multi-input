@@ -8,6 +8,7 @@ you can easliy import the js and css library and then add the following html cod
 </div>
 
 And then call it with the following js code 
+
 $('.js-multi-input-container').multiInput(placeholdertext, validationfunction, validationFailResponseFunction);
 
 The first variable is the input placehoder text. 
@@ -15,6 +16,7 @@ The second variable is the validation function.
 And the las one is when the validation fail, what will be the response. 
 
 And it also has a reset function, you can call it with the following js code:
+
 $('.js-multi-input-container').trigger('reset:container');
 
 
